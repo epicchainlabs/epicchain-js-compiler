@@ -1,0 +1,43 @@
+{
+  "name": "neo-javascript-editor",
+  "author": "birmas <birmingh@gmail.com>",
+  "version": "0.0.1",
+  "description": "NEO Javscript Editor",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "com.electron.nde",
+    "files": [
+      "./main.js",
+      "app/dist/index.html",
+      "app/dist/bundle.js"
+    ]
+  },
+  "dependencies": {
+    "acorn": "^5.1.1",
+    "big-integer": "^1.6.26",
+    "bulma": "^0.5.1",
+    "codemirror": "^5.29.0",
+    "crypto-js": "^3.1.9-1",
+    "electron": "^1.8.2-beta.4",
+    "electron-context-menu": "^0.9.1",
+    "font-awesome": "^4.7.0",
+    "neo-js-blockchain": "git+https://github.com/CityOfZion/neo-js.git#236501611cc018257db5be4e41c105a90bfe9262",
+    "text-diff": "^1.0.1",
+    "utf8": "^2.1.2",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "electron-prebuilt-compile": "^1.8.1",
+    "electron-reload": "^1.2.1",
+    "mocha": "^3.5.3"
+  }
+}
